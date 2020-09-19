@@ -1,10 +1,13 @@
-import React from 'react';
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { Navbar, Routes } from './components'
 
 function App() {
   return (
-    <div>
-      Hello Portfolio
-    </div>
+    <Router>
+      <Navbar />
+      <Routes />
+    </Router>
   );
 }
 
