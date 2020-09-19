@@ -2,7 +2,10 @@ import React from 'react'
 
 const Landing = () => {
   return (
-    <div>Landing</div>
+    <div id='landing'>
+      <div>madeline</div>
+      <div id='landing-url'>URL</div>
+    </div>
   )
 }
 

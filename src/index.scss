@@ -1,0 +1,47 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(#ffffff, #ada2b8);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+#navbar {
+  @include flexCenter(row);
+  justify-content: flex-end;
+  button {
+    border: none;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+#landing {
+  @include flexCenter(column);
+  font-size: 5rem;
+  margin-top: 25vh;
+  animation: fadeIn 2s linear;
+}
+
+#landing-url {
+  font-size: 4rem;
+}
